@@ -69,7 +69,7 @@ int main() {
                             size_t x1 = x * blockCount + i;
                             size_t y1 = y * blockCount + j;
                             size_t z1 = z * blockCount+ k;
-                            sum += standardASize[rowMajorIndexA(x1, y1, z1)] * standardAKernel[rowMajorIndexA(i, j, k)];
+                            sum += standardASize[rowMajorIndexA(x1, y1, z1)] * standardAKernel[rowMajorIndexK(i, j, k)];
                         }
                     }
                 }
