@@ -14,8 +14,6 @@ int main() {
     std::vector<uint64_t> array2(SIZE);
     uint64_t sum1 = 0;
     uint64_t sum2 = 0;
-    uint64_t timeTakenArray1;
-    uint64_t timeTakenArray2;
     uint64_t timeTakenSum1;
     uint64_t timeTakenSum2;
     size_t dimensions = 4000;
@@ -30,7 +28,7 @@ int main() {
             array1[index] = rng();
         }
     }
-    timeTakenArray1 = time.click<std::chrono::microseconds>();
+    //timeTakenArray1 = time.click<std::chrono::microseconds>();
 
     rng.seed(0);
     for(size_t col = 0; col < dimensions; col++){
@@ -39,7 +37,7 @@ int main() {
             array2[index] = rng();
         }
     }
-    timeTakenArray2 = time.click<std::chrono::microseconds>();
+    //timeTakenArray2 = time.click<std::chrono::microseconds>();
 
     for(size_t row = 0; row < dimensions; row++){
         for(size_t col = 0; col < dimensions; col++){
