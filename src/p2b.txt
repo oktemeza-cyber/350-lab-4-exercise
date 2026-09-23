@@ -1,0 +1,1 @@
+Though I was unable to finish implementation, I believe the Morton convolution would be faster rather than the 6 nested loop mess used to calculate the A row major order due to lesser space, and faster processing using matrices and linear algebra.
