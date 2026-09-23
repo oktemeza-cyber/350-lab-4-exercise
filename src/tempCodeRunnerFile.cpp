@@ -1,1 +1,0 @@
-std::mt19937_64 rng(0); // initialize with seed of 0
